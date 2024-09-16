@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  background-color: rgb(145, 145, 145);
+  color: #000000;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+}
+
+.second_bg {
+  display: flex;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  min-height: 920px;
+  width: 74vw;
+}
+
+.relative {
+  position: absolute;
+  min-width: 100%;
+}
+.relative .nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 45px 0 10px 0;
+  font-size: large;
+  font-weight: 700;
+}
+.relative .nav .shape {
+  display: flex;
+  margin: 0 0 0 40px;
+}
+.relative .nav .shape .shapeflex {
+  display: flex;
+}
+.relative .nav .shape .shapeflex .black_circle {
+  background: #000000;
+  padding: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 2px;
+}
+.relative .nav .shape .shapeflex .gray_circle {
+  background: #858484;
+  padding: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 2px;
+}
+.relative .nav .shape h2 {
+  margin: 8px 0px 0px 4px;
+}
+.relative .nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.relative .nav ul li {
+  padding: 0px 14px 0px 14px;
+}
+.relative .nav .btn {
+  display: flex;
+  align-items: center;
+}
+.relative .nav .btn .btn_simple {
+  background: #ffffff;
+  border: none;
+  padding: 8px 10px 8px 10px;
+  margin: 8px 10px 8px 10px;
+  font-size: large;
+  font-weight: 500;
+}
+.relative .nav .btn .btn_border {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px 10px 8px 10px;
+  margin: 8px 50px 8px 10px;
+  font-size: large;
+  font-weight: 500;
+}
+.relative .title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  max-width: 35vw;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: xxx-large;
+  line-height: 1.1;
+}
+.relative .title h1 {
+  margin-bottom: 30px;
+}
+.relative .title p {
+  margin: 0 auto;
+  max-width: 24vw;
+  font-size: x-large;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.relative .items {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-around;
+  width: 90%;
+  bottom: -390px;
+  left: 10px;
+  right: 0;
+  padding: 0 60px;
+}
+.relative .items .img {
+  border-radius: 40px;
+}
+.relative .items .centeritems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.relative .items .centeritems .topitem {
+  background-color: #bdbdbd;
+  width: 170px;
+  height: 110px;
+  margin-bottom: 122px;
+  border-radius: 15px;
+}
+.relative .items .centeritems .topitem .try p {
+  background-color: #000;
+  border-radius: 15px;
+  width: 90%;
+  height: 55%;
+  margin: 8px auto;
+  color: #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.relative .items .centeritems .topitem p {
+  margin: 4px 2px 4px 2px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.relative .items .centeritems .downitem {
+  background: #CFDDDB;
+  display: flex;
+  width: 220px;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.relative .items .centeritems .downitem p {
+  width: 150px;
+  font-size: larger;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.relative .items .centeritems .downitem .scroll {
+  display: flex;
+  flex-direction: column;
+}
+.relative .items .centeritems .downitem .scroll .circle {
+  background: rgba(0, 0, 0, 0.9529411765);
+  width: 1px;
+  height: 1px;
+  padding: 2PX;
+  border-radius: 100%;
+}
+.relative .items .centeritems .downitem .scroll .line {
+  background: rgba(0, 0, 0, 0.9529411765);
+  width: 1px;
+  height: 9px;
+  padding: 2PX;
+  margin: 8PX 0 8px 0;
+  border-radius: 25%;
+}
+.relative .items .seconditem {
+  background: #cca4d6;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 215px;
+  width: 200px;
+  border-radius: 25px;
+  margin-bottom: 6px;
+}
+.relative .items .seconditem .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+}
+.relative .items .seconditem .title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 2px 12px 0 0;
+}
+.relative .items .seconditem .title h4 {
+  margin: 0;
+  font-size: x-large;
+}
+.relative .items .seconditem .title span {
+  display: flex;
+  align-items: end;
+  color: #6b6868;
+  font-size: small;
+  font-weight: 400;
+  margin: 8px 0 0 5px;
+}
+.relative .items .seconditem .event {
+  margin: 8px;
+  font-weight: 500;
+}
+.relative .items .seconditem .subitem1 {
+  background: #000000;
+  color: #858484;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  align-items: center;
+  margin: 4px 0 4px 0;
+}
+.relative .items .seconditem .subitem1 .dateinsidesqure {
+  position: absolute;
+  background: #d5d6ce;
+  display: flex;
+  color: #000000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  margin: 0 29px 0 10px;
+  height: 48px;
+  width: 48px;
+  line-height: 1.1;
+  box-sizing: border-box;
+}
+.relative .items .seconditem .subitem1 .dateinsidesqure .month {
+  font-size: x-small;
+}
+.relative .items .seconditem .subitem1 .dateinsidesqure .day {
+  font-size: large;
+  font-weight: 700;
+}
+.relative .items .seconditem .subitem1 .rightdetail {
+  font-size: medium;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  line-height: 0.2;
+  margin-left: 68px;
+}
+.relative .items .seconditem .subitem1 .rightdetail .designtitle {
+  font-weight: 700;
+  color: #d8d3d3;
+}
+.relative .items .seconditem .subitem1 .rightdetail .desuginclick {
+  font-size: small;
+  color: #616060;
+}
+.relative .items .seconditem .subitem2 {
+  background: #000000;
+  color: #858484;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  align-items: center;
+  margin: 4px 0 4px 0;
+}
+.relative .items .seconditem .subitem2 .dateinsidesqure {
+  position: absolute;
+  background: #cca4d6;
+  display: flex;
+  color: #000000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  margin: 0 29px 0 10px;
+  height: 48px;
+  width: 48px;
+  line-height: 1.1;
+  box-sizing: border-box;
+}
+.relative .items .seconditem .subitem2 .dateinsidesqure .month {
+  font-size: x-small;
+}
+.relative .items .seconditem .subitem2 .dateinsidesqure .day {
+  font-size: large;
+  font-weight: 700;
+}
+.relative .items .seconditem .subitem2 .rightdetail {
+  font-size: medium;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  line-height: 0.2;
+  margin-left: 68px;
+}
+.relative .items .seconditem .subitem2 .rightdetail .designtitle {
+  font-weight: 700;
+  color: #cca4d6;
+}
+.relative .items .seconditem .subitem2 .rightdetail .desuginclick {
+  font-size: small;
+  color: #616060;
+}
