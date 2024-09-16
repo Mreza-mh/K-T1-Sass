@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-  margin: 0px;
+  margin: 0;
 }
 
 .container {
@@ -32,7 +32,7 @@ h1 {
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
   padding: 45px 0 10px 0;
-  font-size: large;
+  font-size: font-size-large;
   font-weight: 700;
 }
 .relative .nav .shape {
@@ -42,8 +42,7 @@ h1 {
 .relative .nav .shape .shapeflex {
   display: flex;
 }
-.relative .nav .shape .shapeflex .black_circle {
-  background: #000000;
+.relative .nav .shape .shapeflex .black_circle, .relative .nav .shape .shapeflex .gray_circle {
   padding: 6px;
   width: 4px;
   height: 4px;
@@ -51,14 +50,11 @@ h1 {
   display: inline-block;
   margin: 2px;
 }
+.relative .nav .shape .shapeflex .black_circle {
+  background: #000000;
+}
 .relative .nav .shape .shapeflex .gray_circle {
   background: #858484;
-  padding: 6px;
-  width: 4px;
-  height: 4px;
-  border-radius: 100%;
-  display: inline-block;
-  margin: 2px;
 }
 .relative .nav .shape h2 {
   margin: 8px 0px 0px 4px;
@@ -68,32 +64,28 @@ h1 {
   list-style-type: none;
 }
 .relative .nav ul li {
-  padding: 0px 14px 0px 14px;
+  padding: 0px 14px;
 }
 .relative .nav .btn {
   display: flex;
   align-items: center;
 }
-.relative .nav .btn .btn_simple {
-  background: #ffffff;
-  border: none;
-  padding: 8px 10px 8px 10px;
-  margin: 8px 10px 8px 10px;
+.relative .nav .btn .btn_simple, .relative .nav .btn .btn_border {
+  background: rgb(255, 255, 255);
   font-size: large;
   font-weight: 500;
+  padding: 8px 10px 8px 10px;
+}
+.relative .nav .btn .btn_simple {
+  border: none;
+  margin: 8px 10px 8px 10px;
 }
 .relative .nav .btn .btn_border {
-  background: #ffffff;
   border-radius: 8px;
-  padding: 8px 10px 8px 10px;
   margin: 8px 50px 8px 10px;
-  font-size: large;
-  font-weight: 500;
 }
 .relative .title {
-  margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 15px;
+  margin: 15px auto 30px;
   max-width: 35vw;
   font-weight: 400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -134,14 +126,14 @@ h1 {
   margin-bottom: 6px;
 }
 .relative .items .centeritems .topitem {
-  background-color: #bdbdbd;
+  background-color: #F3F3F3;
   width: 170px;
   height: 110px;
   margin-bottom: 122px;
   border-radius: 15px;
 }
 .relative .items .centeritems .topitem .try p {
-  background-color: #000;
+  background-color: #000000;
   border-radius: 15px;
   width: 90%;
   height: 55%;
@@ -152,7 +144,7 @@ h1 {
   justify-content: center;
 }
 .relative .items .centeritems .topitem p {
-  margin: 4px 2px 4px 2px;
+  margin: 4px 2px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -192,7 +184,7 @@ h1 {
   border-radius: 25%;
 }
 .relative .items .seconditem {
-  background: #cca4d6;
+  background: #C8A1D6;
   display: flex;
   flex-direction: column;
   padding: 10px;

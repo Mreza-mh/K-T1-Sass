@@ -1,11 +1,19 @@
+$text-color : #000000;
+$primary-bg-color: rgb(255, 255, 255);
+$secondary-bg-color: rgb(145, 145, 145);
+$font-size-large: large;
+$font-size-xlarge: x-large;
+$font-size-xxlarge: xxx-large;
+
+
 body {
     margin: 0;
-    background-color: rgb(145, 145, 145);
-    color: #000000;
+    background-color: $secondary-bg-color;
+    color: $text-color;
 }
 
 h1{
-    margin: 0px;
+    margin: 0;
 }
 
 .container {
@@ -18,65 +26,56 @@ h1{
 .second_bg {
     display: flex;
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: $primary-bg-color;
     min-height: 920px; 
     width: 74vw; 
 }
 
 .relative{
-    
-        position: absolute;
-        min-width: 100%;
+
+    position: absolute;
+    min-width: 100%;
+
     .nav {
 
         display: flex;
         justify-content:space-between ;
-        background-color: rgb(255, 255, 255);
+        background-color: $primary-bg-color;
         padding: 45px 0 10px 0 ;
-        font-size: large;
+        font-size: font-size-large;
         font-weight: 700;
 
-
-
-            .shape{
-
+        .shape{
             display: flex;
-                margin: 0 0 0 40px ;
-                .shapeflex{
-                    display: flex;
-                        .black_circle{
-                            background: #000000;
-                            padding: 6px;
-                            width: 4px;
-                            height: 4px;
-                            border-radius: 100%;
-                            display: inline-block;
-                            margin: 2px;
-                        }
-                        .gray_circle{
-                            background: #858484;
-                            padding: 6px;
-                            width: 4px;
-                            height: 4px;
-                            border-radius: 100%;
-                            display: inline-block;
-                            margin: 2px;
-                        }
-                }
-                
-                h2{
-                    margin : 8px 0px  0px 4px ;
-                }
-
-                
-            } 
+            margin: 0 0 0 40px ;
+            .shapeflex{
+                display: flex;
+                    .black_circle ,.gray_circle{
+                        padding: 6px;
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 100%;
+                        display: inline-block;
+                        margin: 2px;
+                    }
+                    .black_circle{
+                        background: #000000;
+                    }
+                    .gray_circle{
+                        background: #858484;
+                    }
+            }
+            
+            h2{
+                margin : 8px 0px  0px 4px ;
+            }
+        } 
 
         ul{
             display :flex ;
-
             list-style-type: none;
             li{
-                padding: 0px 14px 0px 14px;
+                padding: 0px 14px ;
             }
         }
 
@@ -84,62 +83,59 @@ h1{
             display :flex ;
             align-items: center;
             
-            .btn_simple{
-                background: #ffffff;
-                border: none;
+            .btn_simple ,.btn_border{
+                background: $primary-bg-color;
+                font-size: large;
+                font-weight: 500;
                 padding: 8px 10px 8px 10px ;
+            }
+            .btn_simple{
+                border: none;
                 margin: 8px 10px 8px 10px ;
-                        font-size: large;
-            font-weight: 500;
             }
             .btn_border{
-                background: #ffffff;
                 border-radius: 8px;
-                padding: 8px 10px 8px 10px ;
                 margin: 8px 50px 8px 10px ;
-                        font-size: large;
-            font-weight: 500;
+
             }
         }
 
-
     }
 
-    
     .title  {
-        margin: 0 auto;
-        margin-bottom: 30px;
-        margin-top: 15px;
+        margin: 15px auto 30px;
         max-width: 35vw;
         font-weight: 400 ;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
         text-align: center;
-        font-size: xxx-large;
+        font-size: $font-size-xxlarge;
         line-height: 1.1;
+
         h1{
             margin-bottom: 30px;
         }
-            p{
-                margin: 0 auto;
-                max-width: 24vw;
-                font-size: x-large;
-                font-weight: 500 ;
-                line-height: 1.7;
-            }
+        p{
+            margin: 0 auto;
+            max-width: 24vw;
+            font-size:  $font-size-xlarge;
+            font-weight: 500 ;
+            line-height: 1.7;
+        }
 
     }
 
     .items{
-    position: absolute;
-    display: flex ;
-    flex-direction: row;
-    align-items: end;
-    justify-content:space-around ;
-    width:90%;
-    bottom: -390px;
-    left: 10px;
-    right: 0;
-    padding: 0 60px  ;
+
+        position: absolute;
+        display: flex ;
+        flex-direction: row;
+        align-items: end;
+        justify-content:space-around ;
+        width:90%;
+        bottom: -390px;
+        left: 10px;
+        right: 0;
+        padding: 0 60px  ;
 
         .img{
             border-radius: 40px ;
@@ -159,7 +155,7 @@ h1{
                 border-radius: 15px;
                 .try{
                     p{
-                        background-color: #000;
+                        background-color: #000000;
                         border-radius: 15px;
                         width: 90%;
                         height: 55%;
@@ -171,10 +167,10 @@ h1{
                     }
                 }
                 p{
-                    margin: 4px 2px 4px 2px;
-                        display: flex;
-                        align-items: start;
-                        justify-content: center;
+                    margin: 4px 2px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
                 }
             }
             .downitem{
@@ -186,45 +182,47 @@ h1{
                 align-items: center;
                 border-radius: 25px;
     
-                    p{
+                p{
                     width: 150px;
                     font-size: larger;
                     font-weight: 700;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+                
+                .scroll{
+                    display: flex;
+                    flex-direction: column;
+
+                    .circle{
+                        background: #000000f3;
+                        width: 1px;
+                        height:1px;
+                        padding: 2PX;
+                        border-radius: 100%;
                     }
-                    
-                    .scroll{
-                        display: flex;
-                        flex-direction: column;
-    
-                            .circle{
-                                background: #000000f3;
-                                width: 1px;
-                                height:1px;
-                                padding: 2PX;
-                                border-radius: 100%;
-                            }
-                            .line{
-                                background: #000000f3;
-                                width: 1px;
-                                height:9px;
-                                padding: 2PX;
-                                margin: 8PX 0 8px 0;
-                                border-radius: 25%;
-                            }
+                    .line{
+                        background: #000000f3;
+                        width: 1px;
+                        height:9px;
+                        padding: 2PX;
+                        margin: 8PX 0 8px 0;
+                        border-radius: 25%;
                     }
+                }
             }
         }
 
         .seconditem{
-                    background: #C8A1D6;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 10px;
-                    height: 215px;
-                    width: 200px;
-                    border-radius: 25px;
-                    margin-bottom: 6px;
+
+            background: #C8A1D6;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            height: 215px;
+            width: 200px;
+            border-radius: 25px;
+            margin-bottom: 6px;
+
             .title{
                 display: flex;
                 justify-content: start;
@@ -248,7 +246,6 @@ h1{
                     font-weight: 400;
                     margin: 8px 0 0 5px;
                 }
-
             }
             .event{
                 margin: 8px;
@@ -266,47 +263,47 @@ h1{
                     border-radius: 15px;
                     align-items: center;
                     margin:  4px 0 4px 0 ; 
-                .dateinsidesqure{
-                    position: absolute;
-                    background: #d5d6ce;
-                    display: flex;
-                    color: #000000;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 20%;
-                    margin: 0 29px 0 10px ;
-                    height: 48px;
-                    width: 48px;
-                    line-height: 1.1;
-                    box-sizing: border-box;
+                    .dateinsidesqure{
+                        position: absolute;
+                        background: #d5d6ce;
+                        display: flex;
+                        color: $text-color;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 20%;
+                        margin: 0 29px 0 10px ;
+                        height: 48px;
+                        width: 48px;
+                        line-height: 1.1;
+                        box-sizing: border-box;
 
-                    .month{
-                        font-size: x-small;
-                    }
-                    .day{
-                        font-size: large;
-                        font-weight: 700;
-                    }
+                        .month{
+                            font-size: x-small;
+                        }
+                        .day{
+                            font-size: large;
+                            font-weight: 700;
+                        }
 
-                }
-                .rightdetail{
-                    font-size: medium;
-                    position: absolute;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 0;
-                    line-height: 0.2;
-                    margin-left: 68px;
-                    .designtitle{
-                        font-weight: 700;
-                        color: #d8d3d3;
                     }
-                    .desuginclick{
-                        font-size: small;
-                        color: #616060;
+                    .rightdetail{
+                        font-size: medium;
+                        position: absolute;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        line-height: 0.2;
+                        margin-left: 68px;
+                        .designtitle{
+                            font-weight: 700;
+                            color: #d8d3d3;
+                        }
+                        .desuginclick{
+                            font-size: small;
+                            color: #616060;
+                        }
                     }
-                }
             }
             .subitem2{
                     background: #000000;
@@ -319,52 +316,49 @@ h1{
                     border-radius: 15px;
                     align-items: center;
                     margin:  4px 0 4px 0 ; 
-                .dateinsidesqure{
-                    position: absolute;
-                    background: #cca4d6;
-                    display: flex;
-                    color: #000000;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 20%;
-                    margin: 0 29px 0 10px ;
-                    height: 48px;
-                    width: 48px;
-                    line-height: 1.1;
-                    box-sizing: border-box;
+                    .dateinsidesqure{
+                        position: absolute;
+                        background: #cca4d6;
+                        display: flex;
+                        color: $text-color;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 20%;
+                        margin: 0 29px 0 10px ;
+                        height: 48px;
+                        width: 48px;
+                        line-height: 1.1;
+                        box-sizing: border-box;
 
-                    .month{
-                        font-size: x-small;
-                    }
-                    .day{
-                        font-size: large;
-                        font-weight: 700;
-                    }
+                        .month{
+                            font-size: x-small;
+                        }
+                        .day{
+                            font-size: large;
+                            font-weight: 700;
+                        }
 
-                }
-                .rightdetail{
-                    font-size: medium;
-                    position: absolute;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 0;
-                    line-height: 0.2;
-                    margin-left: 68px;
-                    .designtitle{
-                        font-weight: 700;
-                        color: #cca4d6;
                     }
-                    .desuginclick{
-                        font-size: small;
-                        color: #616060;
+                    .rightdetail{
+                        font-size: medium;
+                        position: absolute;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        line-height: 0.2;
+                        margin-left: 68px;
+                        .designtitle{
+                            font-weight: 700;
+                            color: #cca4d6;
+                        }
+                        .desuginclick{
+                            font-size: small;
+                            color: #616060;
+                        }
                     }
-                }
             }
         }
-
-
-
 
     }
 
